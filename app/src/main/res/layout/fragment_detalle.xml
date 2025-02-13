@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etxt_nombreBarDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="  Nombre del bar"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <EditText
+        android:id="@+id/etxt_direccionBarDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="  Direccion del bar"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etxt_nombreBarDetalle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etxt_nombreBarDetalle"
+        app:layout_constraintTop_toBottomOf="@+id/etxt_nombreBarDetalle" />
+
+    <EditText
+        android:id="@+id/etxt_webBarDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint=" Web del bar"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etxt_direccionBarDetalle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etxt_direccionBarDetalle"
+        app:layout_constraintTop_toBottomOf="@+id/etxt_direccionBarDetalle" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_valoracionBarDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/etxt_webBarDetalle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etxt_webBarDetalle"
+        app:layout_constraintTop_toBottomOf="@+id/etxt_webBarDetalle" />
+
+    <Button
+        android:id="@+id/b_guardarBarDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="56dp"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="@+id/etxt_longitudBarDetalle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/etxt_longitudBarDetalle"
+        app:layout_constraintStart_toStartOf="@+id/etxt_longitudBarDetalle"
+        app:layout_constraintTop_toBottomOf="@+id/etxt_longitudBarDetalle" />
+
+    <Button
+        android:id="@+id/b_borrarBarDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="43dp"
+        android:text="Borrar"
+        app:layout_constraintEnd_toEndOf="@+id/etxt_latitudBarDetalle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etxt_latitudBarDetalle"
+        app:layout_constraintTop_toBottomOf="@+id/etxt_latitudBarDetalle" />
+
+    <ImageButton
+        android:id="@+id/imb_editarBarDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#664FA3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintStart_toEndOf="@+id/etxt_nombreBarDetalle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/imb_ubicacionBarDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="208dp"
+        android:backgroundTint="#664FA3"
+        app:layout_constraintEnd_toEndOf="@+id/imb_editarBarDetalle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imb_editarBarDetalle"
+        app:layout_constraintTop_toBottomOf="@+id/imb_editarBarDetalle"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="158dp"
+        android:text="UBICACIÓN:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/ratingBar_valoracionBarDetalle"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="@+id/ratingBar_valoracionBarDetalle"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar_valoracionBarDetalle" />
+
+    <EditText
+        android:id="@+id/etxt_latitudBarDetalle"
+        android:layout_width="131dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="  latitud"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/etxt_longitudBarDetalle"
+        android:layout_width="131dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="  longitud"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/ratingBar_valoracionBarDetalle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/etxt_latitudBarDetalle"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar_valoracionBarDetalle" />
+
+    <Button
+        android:id="@+id/b_verid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="100dp"
+        android:text="ID"
+        app:layout_constraintBottom_toTopOf="@+id/imb_ubicacionBarDetalle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/etxt_webBarDetalle"
+        app:layout_constraintTop_toBottomOf="@+id/imb_editarBarDetalle"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
