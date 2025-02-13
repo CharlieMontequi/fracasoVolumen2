@@ -136,6 +136,7 @@ class Fragment_detalles : Fragment() {
             val intentMpas = Intent(requireContext(), Mpas_actividad::class.java)
             intentMpas.putExtra("ID_BAR", idFragment)
             startActivity(intentMpas)
+            // falta añadir las dependencias al mapa pero no gustan-- tomar las de clase
         }
         bBorrar.setOnClickListener {
 
