@@ -21,6 +21,7 @@ class Mpas_actividad : AppCompatActivity(), OnMapReadyCallback {
     private var latitud=0L// porque son long las latitudes y longitudes en la bbdd
     private var longitud=0L
 
+    // faltan las preferencias que me dan error, tomar las de clase
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

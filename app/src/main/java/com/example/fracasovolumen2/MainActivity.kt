@@ -17,7 +17,7 @@ import com.example.fracasovolumen2.frgaments.Fragment_listado
 
 class MainActivity : AppCompatActivity(), Comunicador {
 
-
+// falta el gestor de preferencias que esta en vuelta a empezar
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -76,6 +76,7 @@ class MainActivity : AppCompatActivity(), Comunicador {
         }
     }
 
+    // envia datos a los fragments y hace que se actualicen al interactuar con ellos
     override fun envioDeIds(id: Int) {
         var fragmentDetalleBar =
             supportFragmentManager.findFragmentById(R.id.frame_detalle) as? Fragment_detalles
